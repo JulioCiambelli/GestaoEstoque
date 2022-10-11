@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Gestao/Properties/ServiceDependencies/gestaomeuestoque-dev - Web Deploy/profile.arm.json
+/GestaoEstoque
