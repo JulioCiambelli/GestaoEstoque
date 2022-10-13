@@ -32,3 +32,13 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Assinatura do Visual Studio Enterprise(8962d895-5217-43f4-b929-2fc6327c366f)'
+    appType: 'webApp'
+    WebAppName: 'gestaomeuestoque'
+    deployToSlotOrASE: true
+    ResourceGroupName: 'gestaoestoque-gr'
+    SlotName: 'production'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
